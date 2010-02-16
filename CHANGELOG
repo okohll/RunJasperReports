@@ -1,0 +1,33 @@
+== 11th Feb 2010, version numbers 1.0 and 1.1 ==
+* Work for backwards compatibility with Fishbowl 9 software, releasing a specific version 1.0.
+  - version 1.1 is latest at time of writing
+  - version 1.0 is the same code but compiled against an old JasperReports library (2.0.5) compatible with Fishbowl 9
+* Version 1.1: update JasperReports library to version 3.7.1
+* Update Postgres and Firebird JDBC drivers as well as other third party libraries
+* Added email authentication support
+* Added a 'filename' option to specify output filename(s)
+* Added more output types, courtesy of 3rd party contributors
+  - currently untested by me, see source for author acknowledgements
+* Some bugfixes
+
+== 1st Oct 2008 ==
+* Update JasperReports library to version 3.0.1
+
+== 14th Aug 2008 ==
+* Add Firebird database support
+
+== 12th Dec 2007 ==
+* Upgrade jasperreports and postgresql JAR libraries to the latest versions
+
+== 14th Sept 2007 ==
+* When outputting HTML, copy images to new files with .png extensions. JasperReports doesn't add extensions itself
+
+== 1st Sept 2007 ==
+* Send to multiple email addresses, separated by commas
+* Report parameters can be passed in
+
+== 9th August 2007 ==
+* Allow multiple recipient addresses, separated by commas
+
+== Sometime before ==
+* Initial release
