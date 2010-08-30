@@ -92,7 +92,7 @@ import org.apache.commons.io.FileUtils;
  * accounts@gtwm.co.uk -emailsubject FinancialReports -output pdf
  * 
  * @author Oliver Kohll
- * @version 1.1.1
+ * @version 1.1.2
  * @see http://www.agilebase.co.uk/opensource
  */
 public class RunJasperReports {
@@ -299,7 +299,7 @@ public class RunJasperReports {
 			Set<String> emailRecipients, String emailSender, String emailSubject,
 			List<String> attachmentFileNames) throws MessagingException {
 		Properties props = new Properties();
-		props.setProperty("mail.debug", "true");
+		//props.setProperty("mail.debug", "true");
 		props.setProperty("mail.smtp.host", emailHost);
 		if (emailUser != null) {
 			props.setProperty("mail.smtp.auth", "true");
@@ -503,6 +503,8 @@ public class RunJasperReports {
 			System.out.println("Emailing reports to " + emailRecipients);
 			runJasperReports.emailReport(emailHost, emailUser, emailPass, emailRecipients,
 					emailSender, emailSubject, outputFileNames);
+		} else {
+			System.out.println("Email not generated (no recipients specified)");
 		}
 	}
 }
