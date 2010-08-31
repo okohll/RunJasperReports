@@ -268,7 +268,7 @@ public class RunJasperReports {
 		Class.forName(dbType.getDriverName());
 		String connectionStatement = dbType.getProtocolUrl() + dbHost + dbType.getSeparator()
 				+ databaseName;
-		System.out.println("About to connect to dababase using connection string "
+		System.out.println("About to connect to database using connection string "
 				+ connectionStatement);
 		Properties connectionProperties = new Properties();
 		if (databaseUsername != null) {
