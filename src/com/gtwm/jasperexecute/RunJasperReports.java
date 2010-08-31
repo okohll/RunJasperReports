@@ -92,7 +92,7 @@ import org.apache.commons.io.FileUtils;
  * accounts@gtwm.co.uk -emailsubject FinancialReports -output pdf
  * 
  * @author Oliver Kohll
- * @version 1.1.2
+ * @version 1.1.3
  * @see http://www.agilebase.co.uk/opensource
  */
 public class RunJasperReports {
@@ -475,6 +475,7 @@ public class RunJasperReports {
 						databaseType, databaseName, databaseUsername, databasePassword,
 						databaseHost, parameters);
 			} else if (outputType.equals(OutputType.XLS)) {
+				// NB: parameters are in a different order for XLS for some reasons
 				runJasperReports.generateJxlsReport(reportsDefinitionFileName, outputFilename,
 						databaseType, databaseHost, databaseName, databaseUsername, databasePassword,
 						parameters);
