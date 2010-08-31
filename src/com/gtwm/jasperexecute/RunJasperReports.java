@@ -476,8 +476,8 @@ public class RunJasperReports {
 						databaseHost, parameters);
 			} else if (outputType.equals(OutputType.XLS)) {
 				runJasperReports.generateJxlsReport(reportsDefinitionFileName, outputFilename,
-						databaseType, databaseName, databaseUsername, databasePassword,
-						databaseHost, parameters);
+						databaseType, databaseHost, databaseName, databaseUsername, databasePassword,
+						parameters);
 			} else {
 				runJasperReports.generateHtmlReport(reportsDefinitionFileName, outputFilename,
 						databaseType, databaseName, databaseUsername, databasePassword,
