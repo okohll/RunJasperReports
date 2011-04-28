@@ -25,7 +25,7 @@
 			</src>
 			<classpath>
 				<pathelement path="${build.dir}" />
-				<pathelement location="lib/jasperreports-3.7.4.jar" />
+				<pathelement location="lib/jasperreports-4.0.2.jar" />
 				<pathelement location="lib/postgresql-8.4-701.jdbc4.jar" />
 				<pathelement location="lib/mail.jar" />
 				<pathelement location="lib/activation.jar" />
@@ -39,7 +39,7 @@
 		<jar destfile="RunJasperReports.jar" basedir="${build.dir}" includes="**/*.class">
 			<manifest>
 				<attribute name="Main-Class" value="com.gtwm.jasperexecute.RunJasperReports" />
-				<attribute name="Class-Path" value="./ ./lib/jasperreports-3.7.4.jar ./lib/postgresql-8.4-701.jdbc4.jar ./lib/mysql-connector-java-5.0.6-bin.jar ./lib/jaybird-full-2.1.6.jar ./lib/commons-collections-3.2.jar ./lib/commons-logging-1.1.jar ./lib/commons-beanutils.jar ./lib/commons-digester-1.8.jar ./lib/iText-2.1.7.jar ./lib/groovy-all-1.5.5.jar ./lib/activation.jar ./lib/mail.jar ./lib/jfreechart-1.0.13.jar ./lib/jcommon-1.0.16.jar ./lib/commons-cli-1.2.jar ./lib/commons-io-1.3.2.jar" />
+				<attribute name="Class-Path" value="./ ./lib/jasperreports-4.0.2.jar ./lib/postgresql-8.4-701.jdbc4.jar ./lib/mysql-connector-java-5.0.6-bin.jar ./lib/jaybird-full-2.1.6.jar ./lib/commons-collections-3.2.jar ./lib/commons-logging-1.1.jar ./lib/commons-beanutils.jar ./lib/commons-digester-1.8.jar ./lib/iText-2.1.7.jar ./lib/groovy-all-1.5.5.jar ./lib/activation.jar ./lib/mail.jar ./lib/jfreechart-1.0.13.jar ./lib/jcommon-1.0.16.jar ./lib/commons-cli-1.2.jar ./lib/commons-io-1.3.2.jar" />
 			</manifest>
 		</jar>
 	</target>
